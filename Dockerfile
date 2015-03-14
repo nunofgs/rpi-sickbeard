@@ -1,9 +1,7 @@
-FROM ubuntu:14.04
-#Thanks to https://github.com/user419/docker-sickbeard and https://github.com/GeoffreyPlitt/docker-sickbeard
-MAINTAINER Tim Haak <tim@haak.co.uk>
+FROM resin/rpi-raspbian
+MAINTAINER Nuno Sousa <nunofgs@gmail.com>
 
 ENV SICKBEARD_VERSION master
-#ENV SICKBEARD_VERSION build-506
 
 RUN apt-get -q update &&\
     apt-get -qy --force-yes dist-upgrade
